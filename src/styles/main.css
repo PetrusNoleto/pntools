@@ -1,0 +1,149 @@
+.main{
+    width: 100%;
+    height: auto;
+}
+.mainHero{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("../public/images/hero.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px;
+    gap: 12px;   
+}
+.mainHeroTitle{
+    font-size: 80px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--darkTextColor);
+}
+.mainHeroDescription{
+    width: 480px;
+    word-wrap: break-word;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+    color: var(--darkSecundaryTextColor);
+    margin-bottom: 10px;
+}
+.mainHeroButton{
+    width: auto;
+    padding:0px 20px ;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    user-select: none;
+    border-radius: 8px;
+    color: #ffff;
+    border: 1px solid #ffff;
+    transition: background-color 300ms,color 300ms ;
+}
+.mainHeroButton:hover{
+    background-color: #ffff;
+    color: #141414;
+}
+.mainTools{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background-color: #2a2a2a;
+    
+}
+.mainToolsHero{
+    width: 100%;
+    padding: 20px;
+}
+.mainToolsHeroTitle{
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #c9c9c9;
+}
+.mainToolsList{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 12px;
+}
+.mainToolsResult{
+    color: #c9c9c9;
+    display: flex;
+    width: auto;
+    height: 50px;
+    justify-content: space-between;
+    padding: 0px 12px;
+    align-items: center;
+    font-size: 24px;
+    border-radius: 8px;
+    gap: 12px;
+    margin: 12px 0px;
+}
+.mainToolsResultValue{
+    font-size: 18px;
+    word-break: break-all;
+}
+.mainToolsResultValueCopy{
+    width: auto;
+    height: 32px;
+    padding: 0px 12px;
+    cursor: pointer;
+    outline: none;
+    background-color: #6236FF;
+    border: 1px solid #6236FF;
+    font-size: 14px;
+    color: #c9c9c9;
+    border-radius: 8px;
+    transition:border 300ms, background-color 300ms ;
+}
+.mainToolsResultValueSuccess{
+   background-color: green;
+   border:1px solid  green;
+}
+.mainToolsResultValueCopy:hover{
+    border: 1px solid #6236FF;
+    background-color: #2a2a2a;
+}
+.mainToolsResultValueSuccess:hover{
+    border: 1px solid green;
+    background-color: #2a2a2a;
+}
+@media (min-width: 0px) and (max-width: 640px) {
+    .mainHeroTitle{
+        font-size: 48px;
+    }
+    .mainHeroDescription{
+        width: 360px;
+        font-size: 14px;
+    }
+    .mainToolsHeroTitle{
+        font-size: 24px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #c9c9c9;
+    }
+    .mainToolsList{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        gap: 12px;
+    }
+    .mainToolsResult{
+       margin-top: 12px;
+    }
+    .mainToolsResultValue{
+        font-size: 24px;
+        height: auto;
+        display: flex;
+        align-items: center;
+    }
+    .mainToolsResultValueCopy{
+        display: none;
+    }
+}
