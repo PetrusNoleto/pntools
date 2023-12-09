@@ -8,6 +8,7 @@ const DecriptWithCryptoJs = ()=>{
         const [showResult,setShowResult] = useState(false)
         const [copyButtonValue, setCopyButtonValue] = useState("copiar")  
         const sendForDecriptData = async ()=>{
+            setCopyButtonValue("copiar")
             const getEncriptedData = await decriptDataWithCryptoJs(primaryInputData,secundaryInputData)
             setResultData(getEncriptedData)
             setShowResult(true)
